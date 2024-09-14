@@ -1,0 +1,12 @@
+[Unit]
+Description=Notification Daemon using Swaync
+
+[Service]
+Type=simple
+ExecStart=/home/blueweabo/dotfiles/scripts/notifd.sh
+Restart=on-failure
+RestartSec=1
+KillMode=process
+
+[Install]
+WantedBy=default.target
