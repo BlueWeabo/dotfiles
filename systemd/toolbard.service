@@ -1,0 +1,13 @@
+[Unit]
+Description=Service to launch waybar on user login
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/home/blueweabo/dotfiles/scripts/toolbard.sh
+Restart=on-failure
+RestartSec=5
+KillMode=process
+
+[Install]
+WantedBy=graphical.target
