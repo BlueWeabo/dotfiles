@@ -141,7 +141,7 @@
       }
     },
     "network": {
-        "interface": "wlan0*", // (Optional) To force the use of this interface
+        "interface": "eno1*", // (Optional) To force the use of this interface
         "format-wifi": "{signalStrength}% ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
