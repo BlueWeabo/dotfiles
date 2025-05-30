@@ -1,0 +1,12 @@
+[Unit]
+Description=Service to launch opentabletdrivers on user login
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/otd-daemon
+Restart=on-failure
+KillMode=process
+
+[Install]
+WantedBy=graphical.target
