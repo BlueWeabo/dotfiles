@@ -51,8 +51,8 @@ return {
                         capabilities = capabilities,
                     })
                 end,
-
                 ["jdtls"] = function()
+                    return true
                 end,
             }
         })
