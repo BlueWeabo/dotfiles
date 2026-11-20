@@ -84,7 +84,7 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 hl.env("XMODIFIERS", "@im=fcitx")
 hl.env("VKD3D_CONFIG", "dxr11;dxr")
 hl.env("XDG_CONFIG_HOME" , "/home/blueweabo/.config")
-
+-- See https://wiki.hypr.land/configuring/core/environment-variables/
 
 -----------------------
 ----- PERMISSIONS -----
@@ -238,6 +238,15 @@ hl.config({
 })
 
 
+----------------
+---- LAYERS ----
+----------------
+
+hl.config({
+    layers = {
+        allow_new_top_layers_over_existing_fullscreen = true, -- Set to false to make newly mapped top layers render below existing covering fullscreen window
+    },
+})
 ---------------
 ---- INPUT ----
 ---------------
@@ -350,13 +359,11 @@ hl.bind(mainMod .. " + ALT + T", hl.dsp.exec_cmd("pkill waybar"))
 hl.bind(mainMod .. " + CONTROL + T", hl.dsp.exec_cmd("waybar"))
 
 
-
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
 
--- See https://wiki.hypr.land/Configuring/Basics/Window-Rules/
--- and https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
+-- See https://wiki.hypr.land/configuring/core/rules/
 
 -- Example window rules that are useful
 
