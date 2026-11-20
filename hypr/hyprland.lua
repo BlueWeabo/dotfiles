@@ -23,6 +23,12 @@ hl.monitor({
         bitdepth = 10,
     })
 hl.monitor({
+        output = "HDMI-A-3",
+        mode = "1920x1080@60",
+        position = "0x0",
+        scale = "1",
+    })
+hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
@@ -264,7 +270,7 @@ hl.config({
         sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
 
         touchpad = {
-            natural_scroll = false,
+            natural_scroll = true,
         },
     },
 })
