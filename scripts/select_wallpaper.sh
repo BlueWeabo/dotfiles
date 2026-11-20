@@ -18,12 +18,12 @@ wpname=$option
 
 wpimg=$SCRIPT_FOLDER$wpname
 
-magick -size 1920x1080 xc:skyblue $wpimg
-magick composite -resize 1920x1080 -gravity east \
+magick -size 3440x1440 xc:skyblue $wpimg
+magick composite -resize 3440x1440 -gravity east \
     -compose copy $wp $wpimg $wpimg
-magick composite -resize 1920x1080 -blur 100x10 -gravity west \
+magick composite -resize 3440x1440 -blur 100x10 -gravity west \
     -compose copy $wp $wpimg $wpimg
-magick composite -resize 1920x1080 -gravity center \
+magick composite -resize 3440x1440 -gravity center \
     -compose copy $wp $wpimg $wpimg
 rm /home/blueweabo/dotfiles/scripts/tmp/*
 

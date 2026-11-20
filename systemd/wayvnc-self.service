@@ -1,0 +1,12 @@
+[Unit]
+Description=Service to launch wayvnc on login
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/home/blueweabo/dotfiles/scripts/wayvnc.sh
+Restart=on-failure
+KillMode=process
+
+[Install]
+WantedBy=graphical.target
